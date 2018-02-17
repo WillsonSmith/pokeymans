@@ -11,10 +11,6 @@ import App from './App';
 const client = new ApolloClient({
   link: new HttpLink({
     uri: 'http://pokeql.com/v1',
-    fetchOptions: {
-      mode: 'no-cors',
-      'content-type': 'application/json',
-    },
   }),
   cache: new InMemoryCache(),
 });
